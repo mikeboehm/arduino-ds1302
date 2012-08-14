@@ -10,10 +10,12 @@ http://quadpoint.org/projects/arduino-ds1302
 #include <string.h>
 #include <DS1302.h>
 
-/* Set the appropriate digital I/O pin connections */
-uint8_t CE_PIN   = 5;
-uint8_t IO_PIN   = 6;
-uint8_t SCLK_PIN = 7;
+/* Set the appropriate digital I/O pin connections
+  CE_PIN stands for "clock-enable"
+  On some boards this may be labeled "RST", or */
+uint8_t CE_PIN   = 8; 
+uint8_t IO_PIN   = 7; 
+uint8_t SCLK_PIN = 6; 
 
 /* Create buffers */
 char buf[50];
